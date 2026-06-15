@@ -1,5 +1,6 @@
 package com.example.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ public class Tutor {
     private String email;
 
     @OneToMany(mappedBy = "tutor")
+
     private List<Animal> animais = new ArrayList<>();
 
 
