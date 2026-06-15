@@ -16,7 +16,7 @@ public class Animal {
     @JoinColumn(name = "tutor_id")
     private Tutor tutor;
 
-    public Animal(){}
+    protected Animal(){}
 
 
     public Tutor getTutor() {
