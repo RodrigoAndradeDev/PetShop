@@ -1,18 +1,10 @@
 package com.example.demo.controller;
 
 
-import com.example.demo.dto.AnimalRequestDTO;
-import com.example.demo.dto.AnimalResponseDTO;
-import com.example.demo.model.Animal;
-import com.example.demo.model.Tutor;
 import com.example.demo.repository.AnimalRepository;
 import com.example.demo.repository.TutorRepository;
-import jakarta.validation.Valid;
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
-
-import java.util.List;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/animais")
@@ -26,6 +18,8 @@ public class AnimalController {
         this.animalRepository = animalRepository;
         this.tutorRepository = tutorRepository;
     }
+<<<<<<< Updated upstream
+=======
 
 
     @PostMapping
@@ -56,11 +50,5 @@ public class AnimalController {
     }
 
 
+>>>>>>> Stashed changes
 }
-
-
-
-
-
-
-
